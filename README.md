@@ -41,3 +41,7 @@ Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
 **Results** <br>
 Accuracy: A well-trained model should yield around 75-85% accuracy, depending on preprocessing and hyperparameter tuning. <br>
 Insights: Use feature importance to understand which variables (e.g., gender, class) most influence survival.
+
+
+![image](https://github.com/user-attachments/assets/da463e95-cdcb-4ce1-8666-7c3ddfbea30e)
+
