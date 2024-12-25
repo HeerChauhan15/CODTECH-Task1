@@ -1,0 +1,28 @@
+# CODTECH-Task1[Task-1.pdf](https://github.com/user-attachments/files/18244917/Task-1.pdf)
+
+
+import pandas as pd
+data=pd.read_csv(r"C:\Users\Niket Chauhan\OneDrive\Desktop\dataset1.csv")
+data
+
+print(data.columns)
+
+print(data.dtypes)
+
+print(data.shape)
+
+data.isnull()
+
+data.isnull().sum()
+
+print(data['Sex'].unique())  
+print(data['Embarked'].unique())
+
+print("Columns:", data.columns)
+print("Unique values in Sex:", data['Sex'].unique())
+print("Unique values in Embarked:", data['Embarked'].unique())
+data['Age'] = data['Age'].fillna(data['Age'].mean())
+data['Embarked'] = data['Embarked'].fillna(data['Embarked'].mode()[0])
+data['Sex'] = data['Sex'].map({'male': 0, 'female': 1})
+data['Embarked'] = data['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
+print(data.head())
